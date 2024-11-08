@@ -1,10 +1,15 @@
 [workspace]
 resolver = "2"
-members = ["programs/*", "cli-rust", "unstake-lib", "unstake_interface"]
+members = [
+    # "programs/*",
+    # "cli-rust",
+    "unstake-lib",
+    "unstake_interface"
+]
 
 [workspace.dependencies]
-anchor-lang = "0.28.0"
-anchor-spl = "0.28.0"
+# anchor-lang = "0.28.0"
+# anchor-spl = "0.28.0"
 base64 = "0.21.2"
 clap = { version = "^4.0" }
 clap2 = { package = "clap", version = "^2.0" }   
@@ -18,18 +23,18 @@ serde = "^1"
 serde_json = "^1"
 spl-associated-token-account = "^1.1" # required for anchor-spl token
 spl-token = "^3.0"
-spl-math = ">=0.1"
+spl-math = ">=0.3"
 thiserror = "^1"
 
 # solana deps
 # Lock to 1.14.20 for prod, but ^1 for flexibility for library users
-solana-account-decoder = "^1"
-solana-clap-utils = "^1"
-solana-cli-config = "^1"
-solana-client = "^1"
-solana-sdk = "^1"
-solana-program = "^1"
-solana-stake-program = "^1"
+solana-account-decoder = "^2"
+solana-clap-utils = "^2"
+solana-cli-config = "^2"
+solana-client = "^2"
+solana-sdk = "^2"
+solana-program = "^2"
+solana-stake-program = "^2"
 
 # workspace members
 unstake = { path = "./programs/unstake" }
