@@ -30,7 +30,7 @@ anchor-spl = { version = "0.28.0", features = ["metadata", "stake", "token"] }
 mpl-token-metadata = { version = "^1", features = ["no-entrypoint"] }
 serde = { version = "^1", features = ["derive"] }
 spl-associated-token-account = { version = "^1.1", features = ["no-entrypoint"] } # required for anchor-spl token
-spl-math = { version = ">=0.1", features = ["no-entrypoint"] }
+spl-math = { version = ">=0.1" }
 unstake_interface = { path = "../../unstake_interface" }
 unstake-lib = { path = "../../unstake-lib" }
 

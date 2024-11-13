@@ -6,7 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-spl-math = { workspace = true, features = ["no-entrypoint"] }
+spl-math = { workspace = true }
 unstake_interface = { workspace = true }
 
 [dev-dependencies]
